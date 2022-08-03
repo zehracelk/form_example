@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <title>Sözleşme Formu</title>
 </head>
 <body>
@@ -11,12 +12,117 @@
     <div class="header">
     <h1>ABC Tasarım Programı Kurulum ve Satış Sözleşmesi</h1>
 </div>
-<div class="personal">
-    <h6>Sözleşme Onay</h6>
+<div class="consent">
+    <fieldset>
+        <legend>Sözleşme Onay</legend>
+        <input type="radio" name="onay" id="consent">
+        <label for="consent">Aşağıdaki bilgilerin doğruluğunu kabul ediyorum ve sözleşmeyi onaylıyorum.
+        </label><br>
+        
+        <input type="submit" value="Formu Kaydet">
+        <input type="reset" value="Formu Temizle">    
+    </fieldset>
+    
 </div>
-<div class="job"></div>
-<div class="copy"></div>
-<div class="mail"></div>
+
+<div class="personal">
+    <fieldset>
+    <legend>Kişisel Bilgiler</legend>
+
+   <label class="lab" for="securityid">Form Güvenlik ID</label>
+    <input type="text" name="id" id="securityid" placeholder="asdfgh">
+    <br>
+    
+   <label class="lab" for="name">Ad</label>
+    <input type="text" name="isim" id="name" >
+        <br>
+
+   <label class="lab" for="lname">Soyad</label>
+    <input type="text" name="soyisim" id="lname" >
+    <br>
+
+   <label class="lab" for="age">Yaş</label>
+    <input type="text" name="yas"  id="age" >
+    <br>
+
+   <label class="lab" for="m">Mail Adresi</label>
+    <input type="text" name="mailaddres" id="mail" >
+    <br>
+
+   <label class="lab" for="dosya">Fotoğraf Ekle</label>
+    <input type="file" name="Seçilen_dosya" id="dosya">
+
+
+    
+</fieldset>
+</div>
+
+<div class="job">
+    <fieldset>
+        <legend>Diğer Bilgiler</legend>
+        <h4>Buradaki Alanlar Mesleki Deneyimi Kapsar</h4>
+
+       <label  for="tarih">Sektöre Giriş Tarihi</label>
+
+        <input style="margin-left:70px ;" type="date" name="Seçilen_Tarih" id="tarih" min="2022-05-20" max="2022-10-10">
+        <br>
+
+       <label for="tarih">Sektör Deneyimi</label>
+       <br>
+       
+
+         <input  class="inp" type="checkbox" name="bir" id="one"  >
+       <label for="one">1-5 yıl</label>
+        <br>
+        <input class="inp" type="checkbox" name="altı" id="six"  >
+       <label for="six">6-10 yıl</label>
+        <br>
+
+        <input class="inp" type="checkbox" name="onbir" id="eleven"  >
+       <label for="eleven">11-15 yıl</label>
+        <br>
+
+        <input class="inp" type="checkbox" name="onbeş" id="fifteen"  >
+       <label for="fifteen">15-üzeri</label>
+        <br>
+
+        <label for="prog">Programlama Dilleri</label>
+      <br>
+        <select style="margin-left:200px ;" name="Programlama Dilleri" id="prog" size="5" multiple>
+            <option >C#</option>
+            <option >PHP</option>
+            <option >Java</option>
+            <option >Java</option>
+            <option >Java Script</option>
+            
+        </select>
+
+    </fieldset>
+    
+</div>
+
+<div class="copy">
+    <fieldset>
+        <legend>Sözleşme Kopyası</legend>  
+         <textarea name="sozlesme_kopyasi" id="contractcopy" cols="30" rows="8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sapiente provident nisi, consectetur accusamus et ipsum ullam aut a necessitatibus cumque ipsam quam aliquid temporibus cum, tempore ab expedita aspernatur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolorum animi consectetur sit quasi, ipsa temporibus eius aliquid quos. Quibusdam, laudantium commodi numquam eum officiis quos debitis consequatur cumque atque.</textarea>
+    </fieldset>
+    
+</div>
+
+<div class="mail">
+    <fieldset>
+        <legend>Mail Listesi</legend>
+        <label for="yes">Mail Listesine Katılmak  <span style="font-weight:bold;">İstiyorum</span></label>
+        <input type="radio" name="mailonay" id="yes">
+        <br>
+        <label for="no">Mail Listesine Katılmak <span style="text-decoration:underline ;font-weight:bold">İstemiyorum</span></label>
+        <input type="radio" name="mailonay" id="no">
+ 
+
+
+    </fieldset>
+    
+</div>
 </div>
 </body>
 </html>
